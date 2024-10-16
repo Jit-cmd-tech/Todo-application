@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accumulator patern</title>
+</head>
+<body>
+  <script>
+    let nums=[2,3,4,5,6];
+    let sum=0;
+    for(let i=0;i<nums.length;i++){
+      sum+=nums[i];
+    }
+
+  console.log(` Sum of all numbers is :${sum}`);
+
+  let square=[];
+  for(let i=0;i<nums.length;i++){
+    // square[i]=nums[i]*nums[i];
+    square.push(nums[i]*nums[i]);  //this will also work fine for square array as it is mutable in javascript.
+  }
+  console.log(`Square of all numbers is :${square}`);
+  </script>
+  
+</body>
+</html>

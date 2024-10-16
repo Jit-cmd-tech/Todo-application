@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+</head>
+<body>
+  <script>
+    // let product={
+    //     company:'mango',
+    //     price:450,
+    //     itemname:'t-shirt'
+    // };
+
+    //dot notation
+    // console.log(product);
+    // console.log(product.company);
+    // console.log(product.price);
+    // console.log(product.itemname);
+    // product.name='vest';
+    // console.log(product.name);
+
+    //bracket axcess
+    // console.log(product['itemname']);
+    // product['itemname']='myname';
+    // console.log(product['itemname']);
+
+
+    //can be stored in a variable
+    // let myProduct='itemname';
+    // console.log(product[myProduct]);//dot cant be used
+
+    //for delete
+    // delete product.company;
+    // console.log(product);
+
+
+    //object can also contain object inside it and we can also make funtion inisde object
+
+    // let product={
+    //     company:'mango',
+    //     price:450,
+    //     itemname:'t-shirt',
+    //     displayPrice:function(){
+    //       console.log(`price of the product is ${this.price}`)
+    //     }
+    // };
+    // product.displayPrice();
+    //console.log()
+    //Math.random()
+
+
+    //Autoboxing
+    // console.log('this is my name '.length);
+    // console.log('this is my name '.toUpperCase());
+    // console.log('this is my name '.replace('this','that'));
+    
+
+    // let a=3;
+    // let b=a;
+    // console.log(`a=${a},b=${b}`);
+    // a=6;
+    // console.log(`a=${a},b=${b}`);
+
+    // let x={num:54};
+    // let y=x;
+    // console.log(`x=${x.num},y=${y.num}`);
+    // x.num=65;
+    // console.log(`x=${x.num},y=${y.num}`);
+
+    // let p={pop:'iuty'};
+    // let q={pop:'iuty'};
+    // console.log(p===q);
+    
+
+    //Object shortcuts
+    //De-structuring
+    // let product={
+    //   company:'mango',
+    //   itemName:'cotton stripped t-shirt',
+    //   price:861
+    // };
+    // // let company=product.company;
+    // //is same as 
+    // let {company,price}=product;
+    // console.log(company,price);
+
+
+    //ShortHand
+    // let product={
+    //   company:'mango',
+    //   itemName:'cotton stripped t-shirt',
+    //   price:price
+    // };
+
+    // //is same as
+    // let product1={
+    //   company:'mango',
+    //   itemName:'cotton stripped t-shirt',
+    //   price
+    // };
+
+    //Shorthand method
+    // let product={
+    //   company:'mango',
+    //   itemName:'cotton stripped t-shirt',
+    //   price:function(){
+    //     return `price is ${this.price.toFixed(2)}`
+    //   }
+    // };
+
+    // //is same as
+    // let product={
+    //   company:'mango',
+    //   itemName:'cotton stripped t-shirt',
+    //   price(){
+    //     return `price is ${this.price.toFixed(2)}`
+    //   }
+    // };
+
+    
+
+
+  </script>
+</body>
+</html>

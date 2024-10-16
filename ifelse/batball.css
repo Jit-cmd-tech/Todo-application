@@ -1,0 +1,65 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wholebody{
+  height: 800px;
+  width: 800px;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  border: black 10px ridge;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+
+}
+.btn1{
+  width: 200px;
+  height: 200px;
+  background-image:url("MS-Dhoni-1.png");
+  background-size: cover;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.btn2{
+  width: 200px;
+  height: 200px;
+  background-image:url("bowl.png");
+  background-size: cover;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.btn3{
+  width: 200px;
+  height: 200px;
+  background-image:url("wicket.png");
+  background-size: cover;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.clearbtn{
+  height: 100px;
+  width: 200px;
+  margin-top:10px;
+  background: linear-gradient(to right, #ff4b1f, #ff416c);
+  font-size:30px;
+  font-style:Sans-serif;
+  font-weight: bolder;
+}
+h3{
+  font-size:40px;
+  margin-top: 20px;
+}
+button:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+

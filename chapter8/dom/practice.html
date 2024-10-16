@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom practice</title>
+  </head>
+  <body>
+    <!-- <div class="words">hello word</div> -->
+    <button
+      class="count"
+      onclick="
+   whenClick()  // calling the function when button is clicked
+   "
+    >
+      count
+    </button>
+    <div class="counts">number of click</div>
+    <script>
+      // let mydate= new Date();
+      // let words=mydate.getHours();
+      // let myname='jitendra'
+      // //document.querySelector(".words").innerText = words;
+      // //console.log(mydate.getHours());
+      // if (words>=1 && words<=12){
+      //   document.querySelector(".words").innerText = `good morning ${myname}`;
+      // }else if(words>=12 && words<=18){
+      //   document.querySelector(".words").innerText = `good afternoon ${myname}`;
+      // }else{
+      //   document.querySelector(".words").innerText = `good night ${myname}`;
+      // }
+      let count = localStorage.getItem("counts") || 0;
+      function whenClick() {
+        count++;
+        // document.querySelector(".counts").innerText = `number of click: ${count}`;
+        console.log(count);
+        if (count % 2 === 0) {
+          document.querySelector(".count").style.backgroundColor = "red";
+        } else {
+          document.querySelector(".count").style.backgroundColor = "blue";
+        }
+
+        let countsCount = JSON.stringify(count);
+        localStorage.setItem("counts", countsCount);
+        document.querySelector(
+          ".counts"
+        ).innerText = `the no. of count:${localStorage.getItem("counts")}`;
+      }
+    </script>
+  </body>
+</html>
