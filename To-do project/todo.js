@@ -32,7 +32,7 @@ function displayItems(){
     
     <span>${item}</span>
     <span>${dueDate}</span>
-    <button onclick="todoList.splice(${i},1);displayItems();">Delete</button>
+    <button class="btn-delete" onclick="todoList.splice(${i},1);displayItems();">Delete</button>
     
     `;
   }
