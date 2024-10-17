@@ -4,7 +4,7 @@ body{
 #main-heading{
  text-align: center;
 }
-.todo-container{
+.grid-container{
   display: grid;
   grid-template-columns:200px 120px 100px;
 }
