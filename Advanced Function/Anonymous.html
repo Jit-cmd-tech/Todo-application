@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanceed Function</title>
+</head>
+<body>
+  <script>
+
+    //Anonymous
+    let sum=function(num1,num2) {
+      return num1 + num2;
+    }
+    // let num1=13;
+    // let num2=17;
+    // console.log(sum(num1,num2)); // Outputs: 30
+
+    //((4+5)+7)
+    let sumThreeNumbers=function(num1,num2,num3,sumTwoNumbers) {
+      let sum1=sumTwoNumbers(num1,num2);
+      return sumTwoNumbers(sum1,num3);
+    }    
+
+    console.log(sumThreeNumbers(4,5,6,sum)); // Outputs:
+    console.log(sumThreeNumbers); // Outputs:
+    console.log(typeof sumThreeNumbers);
+  </script>
+</body>
+</html>
