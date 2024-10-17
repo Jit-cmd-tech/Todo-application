@@ -6,5 +6,5 @@ body{
 }
 .todo-container{
   display: grid;
-  grid-template-columns: ;
+  grid-template-columns:200px 120px 100px;
 }
