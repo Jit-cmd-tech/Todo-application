@@ -16,8 +16,10 @@ function displayItems(){
 
   for(let i=0; i<todoList.length; i++){
     newHtml+=`
-    <P>${todoList[i]}</P>
-    <button>Delete</button>
+    <div>
+    <span>${todoList[i]}</span>
+    <button onclick="todoList.splice(${1},1);displayItems();">Delete</button>
+    <div>
     `;
   }
   containerElement.innerHTML=newHtml;
