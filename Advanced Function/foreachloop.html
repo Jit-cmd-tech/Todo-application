@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Each Loop</title>
+</head>
+<body>
+  <script>
+    // let fruits=['apple','banana','orange'];
+    // fruits.forEach(fruit => console.log(fruit));
+
+    // let arr=[1,2,3,4,5,6,7,8,9];
+    // for(let i=0; i<arr.length; i++){
+    //   console.log(arr[i]);
+    // }
+
+    // arr.forEach(function(num){
+    //   console.log(num);
+    // });
+      
+
+  //   let arr=[1,2,3,4,5,6,7,8,9];
+  //   arr.forEach(num=>{
+  //     if(num===5){
+  //       return;
+  //     }
+  //     console.log(`visited:${num}`);
+  //   });
+  //  // arr.forEach(num=>console.log(num));
+
+  //  function search(arr,num){
+  //   for(let i=0; i<arr.length; i++){
+  //     if(arr[i]==num){
+  //       console.log(`element found at:${i}`)
+  //   }else{
+  //   console.log('element was not found');
+  //  }
+  // }
+  //  }
+  // search(arr, 7);
+
+
+//Array Methods
+//map and filter
+
+//filter method
+// let arr=[1,2,3 ,4,5,6,7,8,9];
+// let odds=arr.filter((num,index)=>{
+//   if(num%2===1){
+//     return true;
+//   }else{
+//     return false;
+//   }
+// }
+// );
+// console.log(odds);
+
+// let arr=[1,2,3,4,5,6,7,8,9];
+// let newOdds=arr.filter(
+//   (num,index)=>num%2===1
+// );
+// console.log(newOdds);
+
+
+//map
+let arr=[1,2,3,4,5,6];
+let squares=arr.map((num)=>num*num)
+console.log(squares);
+  </script>
+</body>
+</html>
